@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MenStyle - Men's Clothing E-commerce Website
+
+A modern, responsive e-commerce website for men's clothing built with Next.js 15 and Tailwind CSS 4.
+
+![MenStyle E-commerce](https://via.placeholder.com/800x400?text=MenStyle+E-commerce)
+
+## Features
+
+- **Responsive Design**: Works seamlessly on mobile, tablet, and desktop devices
+- **Product Catalog**: Browse through various categories of men's clothing
+- **Product Details**: View detailed information about each product with images and specifications
+- **Shopping Cart**: Add products to cart and manage your selections
+- **Category Browsing**: Filter products by categories
+- **Sorting Options**: Sort products by price, name, or popularity
+- **Clean UI/UX**: Modern interface focused on user experience
+
+## Tech Stack
+
+- **Next.js 15** - React framework with App Router
+- **React 19** - UI library
+- **TypeScript** - For type safety and better developer experience
+- **Tailwind CSS 4** - For utility-first styling
+- **React Icons** - For comprehensive icon set
+- **TurboRepo** - For optimized development experience
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/menstyle.git
+cd menstyle
+```
+
+2. Install the dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/src/app` - App Router pages and layouts
+- `/src/components` - Reusable React components
+- `/src/context` - Context providers (e.g., cart context)
+- `/src/data` - Mock data for products and categories
+- `/public/images` - Product images and assets
 
-## Learn More
+## Key Pages
 
-To learn more about Next.js, take a look at the following resources:
+- **Home** (`/`) - Landing page with featured products and categories
+- **Products** (`/products`) - All products with filtering and sorting
+- **Product Details** (`/products/[id]`) - Individual product page
+- **Categories** (`/categories`) - Browse all categories
+- **Category** (`/categories/[category]`) - Products filtered by category
+- **Cart** (`/cart`) - Shopping cart with product management
+- **About** (`/about`) - About page with company information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project can be easily deployed using Vercel, Netlify, or any other hosting service that supports Next.js:
 
-## Deploy on Vercel
+### Deploying on Vercel (Recommended)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push your code to a GitHub repository
+2. Import your project to Vercel
+3. Vercel will automatically detect Next.js and configure the build settings
+4. Your site will be live after the build completes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Customization
+
+- Add your own products in `/src/data/products.ts`
+- Modify the design by editing the Tailwind classes
+- Add more pages and functionality as needed
+
+## Future Enhancements
+
+- User authentication and profiles
+- Payment gateway integration
+- Wishlist functionality
+- Reviews and ratings
+- Admin dashboard
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+- Next.js team for the amazing framework
+- Tailwind CSS for the utility-first CSS framework
+- React Icons for the comprehensive icon set
