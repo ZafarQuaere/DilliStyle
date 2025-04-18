@@ -27,9 +27,9 @@ export default function ProductCard({ product }: ProductCardProps) {
   };
 
   return (
-    <div className="group relative overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-all hover:shadow-md">
-      <Link href={`/products/${id}`} className="block aspect-square overflow-hidden">
-        <div className="relative h-64 w-full">
+    <div className="group relative overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-all hover:shadow-md flex flex-col">
+      <Link href={`/products/${id}`} className="block overflow-hidden">
+        <div className="relative h-72 w-full">
           <Image
             src={image}
             alt={name}
@@ -39,18 +39,18 @@ export default function ProductCard({ product }: ProductCardProps) {
           />
         </div>
       </Link>
-      <div className="p-4">
+      <div className="p-3 flex-grow flex flex-col">
         <Link href={`/products/${id}`}>
-          <h3 className="text-lg font-medium text-gray-900 line-clamp-1">{name}</h3>
+          <h3 className="text-xl font-medium text-gray-900 line-clamp-1">{name}</h3>
         </Link>
-        <p className="mt-1 text-sm text-gray-500 line-clamp-2">{description}</p>
-        <div className="mt-2 flex items-center justify-between">
-          <p className="text-lg font-semibold text-gray-900">${price.toFixed(2)}</p>
+        <p className="mt-1 text-sm text-gray-600 line-clamp-2">{description}</p>
+        <div className="mt-auto pt-2 flex items-center justify-between">
+          <p className="text-xl font-bold text-gray-900">₹{price.toFixed(2)}</p>
           <span className="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800">
             {category}
           </span>
         </div>
-        <div className="mt-4">
+        <div className="mt-2">
           <button 
             onClick={handleAddToCart} 
             disabled={isAdding}

@@ -72,7 +72,7 @@ export default function ProductDetailPage() {
             <div className="flex flex-col">
               <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
               <div className="mt-4">
-                <span className="text-2xl font-bold text-gray-900">${product.price.toFixed(2)}</span>
+                <span className="text-2xl font-bold text-gray-900">₹{product.price.toFixed(2)}</span>
               </div>
               
               <div className="mt-2">

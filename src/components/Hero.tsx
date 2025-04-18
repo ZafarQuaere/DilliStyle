@@ -5,20 +5,21 @@ export default function Hero() {
   return (
     <div className="relative overflow-hidden bg-gray-900 h-[500px]">
       {/* Background image with overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 flex justify-end pr-8">
         <Image
-          src="/images/hero_bg.png"
-          alt="Fashion shopping bag"
-          fill
+          src="/images/banner_image3.png"
+          alt="Fashion for Gen Z"
+          width={1200}
+          height={500}
           priority
-          className="object-contain object-center"
+          className="object-contain h-full w-auto"
         />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="max-w-xl bg-black/40 p-6 rounded-lg backdrop-blur-sm">
+        <div className="ml-0 max-w-xl bg-black/25 p-6 rounded-lg backdrop-blur-sm">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-          Style Redefined for the Modern Man
+          Style for Gen Z
           </h1>
           <p className="mt-6 text-xl text-white">
             Discover premium men's clothing that combines comfort, quality, and contemporary style.
