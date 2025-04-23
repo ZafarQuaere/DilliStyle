@@ -4,9 +4,6 @@ A modern, responsive e-commerce website for men's clothing built with Next.js 15
 
 ![MenStyle E-commerce](https://via.placeholder.com/800x400?text=MenStyle+E-commerce)
 
-![DilliStyle Website](https://dillistyle.shop)
-
-
 ## Features
 
 - **Responsive Design**: Works seamlessly on mobile, tablet, and desktop devices
